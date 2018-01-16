@@ -1,4 +1,4 @@
-<!-- Written 05/08/2017 20:01:10 -->
+<!-- Written 01/16/2018 20:06:13 -->
 <XDFFORMAT version="1.50">
   <XDFHEADER>
     <flags>0x1</flags>
@@ -9,6 +9,19 @@
     <REGION type="0x0" startaddress="0x0" size="0x100000" regionflags="0x0" />
     <CATEGORY index="0xFF" name="Axes" />
   </XDFHEADER>
+  <XDFCONSTANT uniqueid="0x3342">
+    <title>(TEMIN) minimum TE / Minimum Injection Time</title>
+    <description>minimales TE </description>
+    <CATEGORYMEM index="0" category="10" />
+    <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x14E4A" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <decimalpl>3</decimalpl>
+    <datatype>0</datatype>
+    <unittype>85</unittype>
+    <DALINK index="0" />
+    <MATH equation="X*0.002667">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
   <XDFTABLE uniqueid="0x5F59" flags="0x0">
     <title>(KFMIRL) Throtle Percentage Axis 0x1EF9E</title>
     <CATEGORYMEM index="0" category="11" />
